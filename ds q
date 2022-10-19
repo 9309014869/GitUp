@@ -1,0 +1,56 @@
+#include <stdio.h>
+#include<stdlib.h>
+int sggs2021bcs126[5];
+    int data;
+    int *b61;
+    int *p;
+
+
+int main() {
+    int chiose;
+    p=sggs2021bcs126;
+    b61=sggs2021bcs126;
+    while(1){
+        printf("enter 1 to push\t two 2 pop\t enter the 3 to display");
+        scanf("%d",&chiose);
+        switch(chiose){
+            case 1:{
+            if(b61==(p+5)){
+                printf("full");
+                
+    }
+    else{
+        int val;
+        scanf("%d",&val);
+        *b61=val;
+        b61++;
+    }
+            }
+            break;
+            case 2:
+            if(b61==p){
+                printf("empty");
+            }
+            else{
+                b61--;
+                printf("%d",*b61);
+            }
+            break;
+            case 3:
+            if(b61==p){
+                printf("empty");
+            }
+            else{
+             for(int i=*b61;i>=0;i++){
+                 printf("the ",sggs2021bcs126[i]);
+            }
+            }
+            break;
+            default:
+            printf("theincorrct");
+        }
+    }
+        
+
+    return 0;
+}
