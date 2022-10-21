@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include<stdlib.h>
+#define null 0
+struct node{
+    int data;
+    struct node*next;
+}*head,*secound;
+    struct node *x,*y;
+ void add()
+ {
+x=(struct node *)malloc(sizeof(struct node));
+      head=(struct node*)malloc(sizeof(struct node));
+      head->data=67;
+      head->next=x;
+      x->data=90;
+      x->next=null;
+y=(struct node *)malloc(sizeof(struct node));
+          secound=(struct node*)malloc(sizeof(struct node));
+          secound->data=78;
+          secound->next=y;
+          y->data=98;
+          y->next=null;
+          
+}
+void concate(){
+    struct node *p=head;
+    while(p->next!=null){
+        p=p->next;
+    }
+    p->next=secound;
+    secound=null;
+}
+void display(){
+  struct node *m=head;
+  while(m!=0){
+      printf("%d",m->data);
+      m=m->next;
+  }
+}
+    
+
+int main() {
+add();
+concate();
+display();
+    return 0;
+}
