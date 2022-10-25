@@ -1,0 +1,18 @@
+import java.util.*;
+class Main{
+   static void swap(int m,int n){
+       m=m^n;
+       n=m^n;
+       m=m^n;
+       System.out.println("value of m is "+m +"and value of n is"+ n);
+   }
+   public static void main(String[] args){
+       Scanner sc =new Scanner(System.in);
+       System.out.println("enter the number");
+       int m=sc.nextInt();
+       System.out.println("enter the number");
+       int n=sc.nextInt();
+       swap(m,n);
+       
+   }
+     }
